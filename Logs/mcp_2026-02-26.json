@@ -1,0 +1,2766 @@
+[
+  {
+    "timestamp": "2026-02-26T20:45:19.132607",
+    "event": "orchestrator_start",
+    "servers": [
+      "email",
+      "fb_ig",
+      "x"
+    ]
+  },
+  {
+    "timestamp": "2026-02-26T20:45:19.391697",
+    "event": "server_start",
+    "server": "email#0",
+    "pid": 1204,
+    "status": "ok"
+  },
+  {
+    "timestamp": "2026-02-26T20:45:20.110502",
+    "event": "server_start",
+    "server": "fb_ig#0",
+    "pid": 18420,
+    "status": "ok"
+  },
+  {
+    "timestamp": "2026-02-26T20:45:20.832715",
+    "event": "server_start",
+    "server": "x#0",
+    "pid": 15832,
+    "status": "ok"
+  },
+  {
+    "timestamp": "2026-02-26T20:45:26.108716",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": false,
+    "ping_num": 1
+  },
+  {
+    "timestamp": "2026-02-26T20:45:31.277271",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": false,
+    "ping_num": 1
+  },
+  {
+    "timestamp": "2026-02-26T20:45:37.007935",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": false,
+    "ping_num": 1
+  },
+  {
+    "timestamp": "2026-02-26T20:45:37.992601",
+    "event": "ralph_loop_launched",
+    "task_id": "20260224_2100_Process_Test_Task_Until_Done",
+    "file": "20260224_2100_Process_Test_Task_Until_Done.md",
+    "priority": "high"
+  },
+  {
+    "timestamp": "2026-02-26T20:45:24.426608",
+    "event": "health_cycle",
+    "cycle": 1,
+    "pools": {
+      "email": {
+        "healthy": 0,
+        "total": 1,
+        "ping": {
+          "email#0": false
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 0,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": false
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 0,
+        "total": 1,
+        "ping": {
+          "x#0": false
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [
+      "20260224_2100_Process_Test_Task_Until_Done"
+    ],
+    "ralph_active": 1
+  },
+  {
+    "timestamp": "2026-02-26T20:46:41.054131",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 2
+  },
+  {
+    "timestamp": "2026-02-26T20:46:41.132325",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 2
+  },
+  {
+    "timestamp": "2026-02-26T20:46:41.211056",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 2
+  },
+  {
+    "timestamp": "2026-02-26T20:46:41.341734",
+    "event": "ralph_loop_ended",
+    "task_id": "20260224_2100_Process_Test_Task_Until_Done",
+    "returncode": 0,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-26T20:46:40.983486",
+    "event": "health_cycle",
+    "cycle": 2,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:47:42.707238",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 3
+  },
+  {
+    "timestamp": "2026-02-26T20:47:42.832484",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 3
+  },
+  {
+    "timestamp": "2026-02-26T20:47:42.980621",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 3
+  },
+  {
+    "timestamp": "2026-02-26T20:47:42.362550",
+    "event": "health_cycle",
+    "cycle": 3,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:48:43.921511",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 4
+  },
+  {
+    "timestamp": "2026-02-26T20:48:44.125815",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 4
+  },
+  {
+    "timestamp": "2026-02-26T20:48:44.393223",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 4
+  },
+  {
+    "timestamp": "2026-02-26T20:48:43.814014",
+    "event": "health_cycle",
+    "cycle": 4,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:49:45.539702",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 5
+  },
+  {
+    "timestamp": "2026-02-26T20:49:45.658053",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 5
+  },
+  {
+    "timestamp": "2026-02-26T20:49:45.761046",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 5
+  },
+  {
+    "timestamp": "2026-02-26T20:49:45.410829",
+    "event": "health_cycle",
+    "cycle": 5,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:50:46.492732",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 6
+  },
+  {
+    "timestamp": "2026-02-26T20:50:46.618365",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 6
+  },
+  {
+    "timestamp": "2026-02-26T20:50:46.887311",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 6
+  },
+  {
+    "timestamp": "2026-02-26T20:50:46.311110",
+    "event": "health_cycle",
+    "cycle": 6,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:51:47.959350",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 7
+  },
+  {
+    "timestamp": "2026-02-26T20:51:48.088841",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 7
+  },
+  {
+    "timestamp": "2026-02-26T20:51:48.178766",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 7
+  },
+  {
+    "timestamp": "2026-02-26T20:51:47.795413",
+    "event": "health_cycle",
+    "cycle": 7,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:52:49.311607",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 8
+  },
+  {
+    "timestamp": "2026-02-26T20:52:49.418649",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 8
+  },
+  {
+    "timestamp": "2026-02-26T20:52:49.576062",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 8
+  },
+  {
+    "timestamp": "2026-02-26T20:52:49.213338",
+    "event": "health_cycle",
+    "cycle": 8,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:53:19.004685",
+    "event": "orchestrator_start",
+    "servers": [
+      "email",
+      "fb_ig",
+      "x"
+    ]
+  },
+  {
+    "timestamp": "2026-02-26T20:53:19.181830",
+    "event": "server_start",
+    "server": "email#0",
+    "pid": 8080,
+    "status": "ok"
+  },
+  {
+    "timestamp": "2026-02-26T20:53:19.891174",
+    "event": "server_start",
+    "server": "fb_ig#0",
+    "pid": 6420,
+    "status": "ok"
+  },
+  {
+    "timestamp": "2026-02-26T20:53:20.640736",
+    "event": "server_start",
+    "server": "x#0",
+    "pid": 11896,
+    "status": "ok"
+  },
+  {
+    "timestamp": "2026-02-26T20:53:28.934642",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": false,
+    "ping_num": 1
+  },
+  {
+    "timestamp": "2026-02-26T20:53:34.109574",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": false,
+    "ping_num": 1
+  },
+  {
+    "timestamp": "2026-02-26T20:53:39.510445",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": false,
+    "ping_num": 1
+  },
+  {
+    "timestamp": "2026-02-26T20:53:24.309810",
+    "event": "health_cycle",
+    "cycle": 1,
+    "pools": {
+      "email": {
+        "healthy": 0,
+        "total": 1,
+        "ping": {
+          "email#0": false
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 0,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": false
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 0,
+        "total": 1,
+        "ping": {
+          "x#0": false
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:53:52.568494",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 9
+  },
+  {
+    "timestamp": "2026-02-26T20:53:53.023935",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 9
+  },
+  {
+    "timestamp": "2026-02-26T20:53:53.680516",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 9
+  },
+  {
+    "timestamp": "2026-02-26T20:53:52.154660",
+    "event": "health_cycle",
+    "cycle": 9,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:54:41.486989",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 2
+  },
+  {
+    "timestamp": "2026-02-26T20:54:41.722531",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 2
+  },
+  {
+    "timestamp": "2026-02-26T20:54:42.052353",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 2
+  },
+  {
+    "timestamp": "2026-02-26T20:54:41.296745",
+    "event": "health_cycle",
+    "cycle": 2,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:54:56.594525",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 10
+  },
+  {
+    "timestamp": "2026-02-26T20:54:56.838959",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 10
+  },
+  {
+    "timestamp": "2026-02-26T20:54:57.198435",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 10
+  },
+  {
+    "timestamp": "2026-02-26T20:54:56.301120",
+    "event": "health_cycle",
+    "cycle": 10,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:55:44.453520",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 3
+  },
+  {
+    "timestamp": "2026-02-26T20:55:44.610384",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 3
+  },
+  {
+    "timestamp": "2026-02-26T20:55:44.735922",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 3
+  },
+  {
+    "timestamp": "2026-02-26T20:55:44.328503",
+    "event": "health_cycle",
+    "cycle": 3,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:55:59.435806",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 11
+  },
+  {
+    "timestamp": "2026-02-26T20:55:59.864623",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 11
+  },
+  {
+    "timestamp": "2026-02-26T20:56:00.225668",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 11
+  },
+  {
+    "timestamp": "2026-02-26T20:55:59.267855",
+    "event": "health_cycle",
+    "cycle": 11,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:56:47.427761",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 4
+  },
+  {
+    "timestamp": "2026-02-26T20:56:51.833172",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 4
+  },
+  {
+    "timestamp": "2026-02-26T20:56:56.088896",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 4
+  },
+  {
+    "timestamp": "2026-02-26T20:56:45.870104",
+    "event": "health_cycle",
+    "cycle": 4,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:57:04.584784",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 12
+  },
+  {
+    "timestamp": "2026-02-26T20:57:04.824992",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 12
+  },
+  {
+    "timestamp": "2026-02-26T20:57:05.096568",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 12
+  },
+  {
+    "timestamp": "2026-02-26T20:57:04.428816",
+    "event": "health_cycle",
+    "cycle": 12,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:57:58.716845",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 5
+  },
+  {
+    "timestamp": "2026-02-26T20:57:58.861770",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 5
+  },
+  {
+    "timestamp": "2026-02-26T20:57:58.996249",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 5
+  },
+  {
+    "timestamp": "2026-02-26T20:57:58.595339",
+    "event": "health_cycle",
+    "cycle": 5,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:58:07.970013",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 13
+  },
+  {
+    "timestamp": "2026-02-26T20:58:08.104603",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 13
+  },
+  {
+    "timestamp": "2026-02-26T20:58:08.727245",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 13
+  },
+  {
+    "timestamp": "2026-02-26T20:58:07.828900",
+    "event": "health_cycle",
+    "cycle": 13,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:59:00.065720",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 6
+  },
+  {
+    "timestamp": "2026-02-26T20:59:00.221950",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 6
+  },
+  {
+    "timestamp": "2026-02-26T20:59:00.362595",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 6
+  },
+  {
+    "timestamp": "2026-02-26T20:58:59.943694",
+    "event": "health_cycle",
+    "cycle": 6,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T20:59:10.100230",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 14
+  },
+  {
+    "timestamp": "2026-02-26T20:59:10.434227",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 14
+  },
+  {
+    "timestamp": "2026-02-26T20:59:10.559222",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 14
+  },
+  {
+    "timestamp": "2026-02-26T20:59:09.951016",
+    "event": "health_cycle",
+    "cycle": 14,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:00:01.879741",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 7
+  },
+  {
+    "timestamp": "2026-02-26T21:00:02.286954",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 7
+  },
+  {
+    "timestamp": "2026-02-26T21:00:02.497089",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 7
+  },
+  {
+    "timestamp": "2026-02-26T21:00:01.676740",
+    "event": "health_cycle",
+    "cycle": 7,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:00:11.701309",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 15
+  },
+  {
+    "timestamp": "2026-02-26T21:00:11.857877",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 15
+  },
+  {
+    "timestamp": "2026-02-26T21:00:12.021056",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 15
+  },
+  {
+    "timestamp": "2026-02-26T21:00:11.562742",
+    "event": "health_cycle",
+    "cycle": 15,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:01:07.724438",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 8
+  },
+  {
+    "timestamp": "2026-02-26T21:01:08.511557",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 8
+  },
+  {
+    "timestamp": "2026-02-26T21:01:08.886565",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 8
+  },
+  {
+    "timestamp": "2026-02-26T21:01:07.164689",
+    "event": "health_cycle",
+    "cycle": 8,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:01:13.886940",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 16
+  },
+  {
+    "timestamp": "2026-02-26T21:01:14.438087",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 16
+  },
+  {
+    "timestamp": "2026-02-26T21:01:15.579776",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 16
+  },
+  {
+    "timestamp": "2026-02-26T21:01:13.591732",
+    "event": "health_cycle",
+    "cycle": 16,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:02:10.172349",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 9
+  },
+  {
+    "timestamp": "2026-02-26T21:02:10.318853",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 9
+  },
+  {
+    "timestamp": "2026-02-26T21:02:10.479278",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 9
+  },
+  {
+    "timestamp": "2026-02-26T21:02:10.053351",
+    "event": "health_cycle",
+    "cycle": 9,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:02:18.801598",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 17
+  },
+  {
+    "timestamp": "2026-02-26T21:02:18.889861",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 17
+  },
+  {
+    "timestamp": "2026-02-26T21:02:18.983593",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 17
+  },
+  {
+    "timestamp": "2026-02-26T21:02:18.702209",
+    "event": "health_cycle",
+    "cycle": 17,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:03:12.728478",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 10
+  },
+  {
+    "timestamp": "2026-02-26T21:03:16.179701",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 10
+  },
+  {
+    "timestamp": "2026-02-26T21:03:18.590023",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 10
+  },
+  {
+    "timestamp": "2026-02-26T21:03:20.548599",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 18
+  },
+  {
+    "timestamp": "2026-02-26T21:03:11.257290",
+    "event": "health_cycle",
+    "cycle": 10,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:03:24.325969",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 18
+  },
+  {
+    "timestamp": "2026-02-26T21:03:26.186305",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 18
+  },
+  {
+    "timestamp": "2026-02-26T21:03:19.768666",
+    "event": "health_cycle",
+    "cycle": 18,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:04:25.475333",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 11
+  },
+  {
+    "timestamp": "2026-02-26T21:04:25.645076",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 11
+  },
+  {
+    "timestamp": "2026-02-26T21:04:26.282166",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 11
+  },
+  {
+    "timestamp": "2026-02-26T21:04:25.357097",
+    "event": "health_cycle",
+    "cycle": 11,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:04:30.227505",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 19
+  },
+  {
+    "timestamp": "2026-02-26T21:04:30.400546",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 19
+  },
+  {
+    "timestamp": "2026-02-26T21:04:30.556784",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 19
+  },
+  {
+    "timestamp": "2026-02-26T21:04:30.115508",
+    "event": "health_cycle",
+    "cycle": 19,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:05:29.753071",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 12
+  },
+  {
+    "timestamp": "2026-02-26T21:05:29.994765",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 12
+  },
+  {
+    "timestamp": "2026-02-26T21:05:30.151034",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 12
+  },
+  {
+    "timestamp": "2026-02-26T21:05:29.628583",
+    "event": "health_cycle",
+    "cycle": 12,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:05:31.830522",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 20
+  },
+  {
+    "timestamp": "2026-02-26T21:05:32.018031",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 20
+  },
+  {
+    "timestamp": "2026-02-26T21:05:32.202008",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 20
+  },
+  {
+    "timestamp": "2026-02-26T21:05:31.645535",
+    "event": "health_cycle",
+    "cycle": 20,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:06:31.750605",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 13
+  },
+  {
+    "timestamp": "2026-02-26T21:06:31.876162",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 13
+  },
+  {
+    "timestamp": "2026-02-26T21:06:32.048007",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 13
+  },
+  {
+    "timestamp": "2026-02-26T21:06:31.515128",
+    "event": "health_cycle",
+    "cycle": 13,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:06:34.757343",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 21
+  },
+  {
+    "timestamp": "2026-02-26T21:06:34.974806",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 21
+  },
+  {
+    "timestamp": "2026-02-26T21:06:35.193548",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 21
+  },
+  {
+    "timestamp": "2026-02-26T21:06:34.206867",
+    "event": "health_cycle",
+    "cycle": 21,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:07:32.864953",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 14
+  },
+  {
+    "timestamp": "2026-02-26T21:07:33.030136",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 14
+  },
+  {
+    "timestamp": "2026-02-26T21:07:33.335814",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 14
+  },
+  {
+    "timestamp": "2026-02-26T21:07:32.759573",
+    "event": "health_cycle",
+    "cycle": 14,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:07:36.703542",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 22
+  },
+  {
+    "timestamp": "2026-02-26T21:07:36.814551",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 22
+  },
+  {
+    "timestamp": "2026-02-26T21:07:36.970350",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 22
+  },
+  {
+    "timestamp": "2026-02-26T21:07:36.593092",
+    "event": "health_cycle",
+    "cycle": 22,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:08:34.481846",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 15
+  },
+  {
+    "timestamp": "2026-02-26T21:08:35.061217",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 15
+  },
+  {
+    "timestamp": "2026-02-26T21:08:35.421807",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 15
+  },
+  {
+    "timestamp": "2026-02-26T21:08:34.112572",
+    "event": "health_cycle",
+    "cycle": 15,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:08:39.073970",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 23
+  },
+  {
+    "timestamp": "2026-02-26T21:08:39.448638",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 23
+  },
+  {
+    "timestamp": "2026-02-26T21:08:39.604883",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 23
+  },
+  {
+    "timestamp": "2026-02-26T21:08:38.894261",
+    "event": "health_cycle",
+    "cycle": 23,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:09:37.011271",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 16
+  },
+  {
+    "timestamp": "2026-02-26T21:09:37.433719",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 16
+  },
+  {
+    "timestamp": "2026-02-26T21:09:37.574349",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 16
+  },
+  {
+    "timestamp": "2026-02-26T21:09:36.892755",
+    "event": "health_cycle",
+    "cycle": 16,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:09:41.045738",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 24
+  },
+  {
+    "timestamp": "2026-02-26T21:09:41.202007",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 24
+  },
+  {
+    "timestamp": "2026-02-26T21:09:41.357473",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 24
+  },
+  {
+    "timestamp": "2026-02-26T21:09:40.925741",
+    "event": "health_cycle",
+    "cycle": 24,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:10:38.687279",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 17
+  },
+  {
+    "timestamp": "2026-02-26T21:10:38.859725",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 17
+  },
+  {
+    "timestamp": "2026-02-26T21:10:39.125859",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 17
+  },
+  {
+    "timestamp": "2026-02-26T21:10:38.557664",
+    "event": "health_cycle",
+    "cycle": 17,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:10:42.229986",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 25
+  },
+  {
+    "timestamp": "2026-02-26T21:10:42.652388",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 25
+  },
+  {
+    "timestamp": "2026-02-26T21:10:42.969838",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 25
+  },
+  {
+    "timestamp": "2026-02-26T21:10:42.084749",
+    "event": "health_cycle",
+    "cycle": 25,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:11:40.219857",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 18
+  },
+  {
+    "timestamp": "2026-02-26T21:11:40.593612",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 18
+  },
+  {
+    "timestamp": "2026-02-26T21:11:41.047300",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 18
+  },
+  {
+    "timestamp": "2026-02-26T21:11:39.813624",
+    "event": "health_cycle",
+    "cycle": 18,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:11:46.425384",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 26
+  },
+  {
+    "timestamp": "2026-02-26T21:11:47.372018",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 26
+  },
+  {
+    "timestamp": "2026-02-26T21:11:47.641063",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 26
+  },
+  {
+    "timestamp": "2026-02-26T21:11:45.397429",
+    "event": "health_cycle",
+    "cycle": 26,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:12:44.682816",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 19
+  },
+  {
+    "timestamp": "2026-02-26T21:12:45.489985",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 19
+  },
+  {
+    "timestamp": "2026-02-26T21:12:46.116094",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 19
+  },
+  {
+    "timestamp": "2026-02-26T21:12:44.491119",
+    "event": "health_cycle",
+    "cycle": 19,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:12:50.295983",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 27
+  },
+  {
+    "timestamp": "2026-02-26T21:12:50.530216",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 27
+  },
+  {
+    "timestamp": "2026-02-26T21:12:50.801314",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 27
+  },
+  {
+    "timestamp": "2026-02-26T21:12:50.013388",
+    "event": "health_cycle",
+    "cycle": 27,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:13:48.621904",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 20
+  },
+  {
+    "timestamp": "2026-02-26T21:13:48.758148",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 20
+  },
+  {
+    "timestamp": "2026-02-26T21:13:48.919963",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 20
+  },
+  {
+    "timestamp": "2026-02-26T21:13:48.536340",
+    "event": "health_cycle",
+    "cycle": 20,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  },
+  {
+    "timestamp": "2026-02-26T21:13:52.725896",
+    "event": "health_ping",
+    "server": "email#0",
+    "ok": true,
+    "ping_num": 28
+  },
+  {
+    "timestamp": "2026-02-26T21:13:52.828581",
+    "event": "health_ping",
+    "server": "fb_ig#0",
+    "ok": true,
+    "ping_num": 28
+  },
+  {
+    "timestamp": "2026-02-26T21:13:52.990410",
+    "event": "health_ping",
+    "server": "x#0",
+    "ok": true,
+    "ping_num": 28
+  },
+  {
+    "timestamp": "2026-02-26T21:13:52.592621",
+    "event": "health_cycle",
+    "cycle": 28,
+    "pools": {
+      "email": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "email#0": true
+        },
+        "restarted": []
+      },
+      "fb_ig": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "fb_ig#0": true
+        },
+        "restarted": []
+      },
+      "x": {
+        "healthy": 1,
+        "total": 1,
+        "ping": {
+          "x#0": true
+        },
+        "restarted": []
+      }
+    },
+    "restarted": [],
+    "queued": 0,
+    "ralph_launched": [],
+    "ralph_active": 0
+  }
+]

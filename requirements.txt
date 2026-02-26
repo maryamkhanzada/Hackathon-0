@@ -1,0 +1,25 @@
+# Personal AI Employee — Python dependencies (Silver Tier)
+
+# Google API (Gmail Watcher)
+google-auth>=2.0
+google-auth-oauthlib>=1.0
+google-api-python-client>=2.0
+
+# Browser automation (WhatsApp + LinkedIn Watchers)
+playwright>=1.40
+
+# Configuration
+pyyaml>=6.0
+
+# Environment variables
+python-dotenv>=1.0
+
+# Facebook & Instagram integration (Gold Tier)
+facebook-sdk>=3.1
+instabot>=0.117.0
+mcp>=1.0
+
+# X (Twitter) integration (Gold Tier)
+tweepy>=4.14
+
+# Weekly audit (Gold Tier — pyyaml already listed above)

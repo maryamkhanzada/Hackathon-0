@@ -1,0 +1,83 @@
+[
+  {
+    "timestamp": "2026-02-24T20:23:20.529197",
+    "event": "task_queued",
+    "task_name": "crash_sim_task",
+    "file": "20260224_202320_crash_sim_task.json",
+    "source": "crash_simulation_test",
+    "queue_depth": 1
+  },
+  {
+    "timestamp": "2026-02-24T20:23:20.708808",
+    "event": "task_removed",
+    "file": "20260224_202320_crash_sim_task.json",
+    "reason": "success",
+    "attempts": 1
+  },
+  {
+    "timestamp": "2026-02-24T20:23:24.384860",
+    "event": "degraded_enter",
+    "reason": "crash_simulation_test"
+  },
+  {
+    "timestamp": "2026-02-24T20:23:24.460131",
+    "event": "degraded_exit",
+    "previous_reason": "crash_simulation_test"
+  },
+  {
+    "timestamp": "2026-02-24T20:23:24.535463",
+    "event": "disk_check",
+    "path": "D:/",
+    "free_gb": 102.81,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 0.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-24T20:23:24.610991",
+    "event": "retry",
+    "label": "crash_sim_retry_test",
+    "attempt": 1,
+    "max_retries": 3,
+    "error_type": "ValueError",
+    "error": "simulated failure",
+    "wait_secs": 0
+  },
+  {
+    "timestamp": "2026-02-24T20:23:25.756558",
+    "event": "retry",
+    "label": "crash_sim_retry_test",
+    "attempt": 2,
+    "max_retries": 3,
+    "error_type": "ValueError",
+    "error": "simulated failure",
+    "wait_secs": 0
+  },
+  {
+    "timestamp": "2026-02-24T20:23:26.905033",
+    "event": "retry",
+    "label": "crash_sim_retry_test",
+    "attempt": 3,
+    "max_retries": 3,
+    "error_type": "ValueError",
+    "error": "simulated failure",
+    "wait_secs": 0
+  },
+  {
+    "timestamp": "2026-02-24T20:44:17.020614",
+    "event": "skill_completed",
+    "skill": "Enable_Error_Recovery_Degradation",
+    "files_created": [
+      "watchers/resilience.py",
+      "watchdog.py",
+      "Skills/SKILL_Error_Recovery.md",
+      "Needs_Action/20260224_2030_Handbook_Amendment_Error_Recovery.md"
+    ],
+    "files_patched": [
+      "watchers/base_watcher.py"
+    ],
+    "test_result": "20/21 passed",
+    "status": "complete"
+  }
+]

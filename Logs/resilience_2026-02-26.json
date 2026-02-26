@@ -1,0 +1,399 @@
+[
+  {
+    "timestamp": "2026-02-26T20:53:03.080134",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.81,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T20:53:03.250236",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.81,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T20:53:14.515841",
+    "event": "process_restarted",
+    "process": "mcp_orchestrator",
+    "new_pid": 18124,
+    "restart_count": 1
+  },
+  {
+    "timestamp": "2026-02-26T20:53:25.769213",
+    "event": "process_restarted",
+    "process": "gmail_watcher",
+    "new_pid": 4572,
+    "restart_count": 1
+  },
+  {
+    "timestamp": "2026-02-26T20:53:37.432986",
+    "event": "process_restarted",
+    "process": "whatsapp_watcher",
+    "new_pid": 10044,
+    "restart_count": 1
+  },
+  {
+    "timestamp": "2026-02-26T20:53:47.838170",
+    "event": "process_restarted",
+    "process": "linkedin_watcher",
+    "new_pid": 16012,
+    "restart_count": 1
+  },
+  {
+    "timestamp": "2026-02-26T20:53:47.923612",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T20:54:48.223247",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.81,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T20:54:48.875239",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T20:55:49.559813",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.81,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T20:55:49.881285",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T20:56:54.632142",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.81,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T20:56:55.843315",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T20:57:58.380682",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.8,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T20:57:58.497708",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T20:58:58.789344",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.79,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T20:58:58.966528",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T20:59:59.193318",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.79,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T20:59:59.314464",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:00:59.999271",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.79,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:01:00.098253",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:02:00.315680",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.79,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:02:00.416861",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:03:00.652297",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.79,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:03:00.735973",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:04:01.908910",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.77,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:04:02.186525",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:05:02.363192",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.77,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:05:02.649670",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:06:03.142140",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.77,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:06:03.295318",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:07:03.598192",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.76,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:07:03.818482",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:08:04.151627",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.76,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:08:04.419280",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:09:04.670833",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.76,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:09:04.796427",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:10:05.711594",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.75,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:10:05.796636",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:11:06.129281",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.75,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:11:06.276164",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:12:06.477668",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.76,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:12:06.599203",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },
+  {
+    "timestamp": "2026-02-26T21:13:06.919055",
+    "event": "disk_check",
+    "path": "D:\\Hackathon-0",
+    "free_gb": 102.76,
+    "total_gb": 140.82,
+    "used_pct": 27.0,
+    "alert_threshold_gb": 1.0,
+    "critical_threshold_gb": 0.2
+  },
+  {
+    "timestamp": "2026-02-26T21:13:07.150974",
+    "event": "watchdog_cycle",
+    "alive": 4,
+    "total": 4,
+    "dead": 0,
+    "degraded": false
+  },

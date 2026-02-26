@@ -1,0 +1,27 @@
+{
+  "week": "2026-W08",
+  "period_start": "2026-02-17",
+  "period_end": "2026-02-23",
+  "income": [
+    {"date": "2026-02-17", "source": "Enterprise Client A", "category": "saas_subscription", "amount": 1200.00, "description": "50-seat enterprise plan — monthly"},
+    {"date": "2026-02-18", "source": "New Lead: John Smith", "category": "saas_subscription", "amount": 2400.00, "description": "50-seat enterprise plan — first payment"},
+    {"date": "2026-02-19", "source": "SMB Client B", "category": "saas_subscription", "amount": 299.00, "description": "10-seat standard plan"},
+    {"date": "2026-02-20", "source": "SMB Client C", "category": "saas_subscription", "amount": 199.00, "description": "5-seat starter plan — renewal"},
+    {"date": "2026-02-21", "source": "Consulting Project Y", "category": "consulting", "amount": 4200.00, "description": "4-day onboarding + training"},
+    {"date": "2026-02-21", "source": "David Levi", "category": "saas_subscription", "amount": 960.00, "description": "20-seat enterprise plan — first payment"},
+    {"date": "2026-02-22", "source": "Partner Referrals", "category": "affiliate", "amount": 320.00, "description": "3 partner referral commissions"},
+    {"date": "2026-02-23", "source": "SMB Client E", "category": "saas_subscription", "amount": 299.00, "description": "10-seat plan — new signup"}
+  ],
+  "expenses": [
+    {"date": "2026-02-17", "vendor": "AWS", "category": "infrastructure", "amount": 142.37, "description": "February AWS bill"},
+    {"date": "2026-02-17", "vendor": "GitHub", "category": "tooling", "amount": 21.00, "description": "Team GitHub plan"},
+    {"date": "2026-02-18", "vendor": "Notion", "category": "tooling", "amount": 16.00, "description": "Workspace plan"},
+    {"date": "2026-02-18", "vendor": "Slack", "category": "communication", "amount": 87.50, "description": "Pro plan — 7 seats"},
+    {"date": "2026-02-19", "vendor": "CloudHost", "category": "infrastructure", "amount": 249.00, "description": "Invoice #4821 — hosting"},
+    {"date": "2026-02-20", "vendor": "Zoom", "category": "communication", "amount": 149.90, "description": "Business plan"},
+    {"date": "2026-02-20", "vendor": "Figma", "category": "design", "amount": 45.00, "description": "Starter plan"},
+    {"date": "2026-02-21", "vendor": "HubSpot", "category": "crm", "amount": 400.00, "description": "Starter CRM — monthly"},
+    {"date": "2026-02-22", "vendor": "Unused SaaS Tool Z", "category": "tooling", "amount": 220.00, "description": "Annual plan — last login 45 days ago"},
+    {"date": "2026-02-23", "vendor": "Ahmed Khan Payment", "category": "contractor", "amount": 500.00, "description": "Freelance invoice #AK-202602"}
+  ]
+}

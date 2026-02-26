@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "dotenv": "^17.3.1",
+    "nodemailer": "^8.0.1",
+    "playwright": "^1.58.2"
+  }
+}

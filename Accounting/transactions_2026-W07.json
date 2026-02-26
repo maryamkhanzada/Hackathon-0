@@ -1,0 +1,23 @@
+{
+  "week": "2026-W07",
+  "period_start": "2026-02-10",
+  "period_end": "2026-02-16",
+  "income": [
+    {"date": "2026-02-10", "source": "Enterprise Client A", "category": "saas_subscription", "amount": 1200.00, "description": "50-seat enterprise plan — monthly"},
+    {"date": "2026-02-11", "source": "SMB Client B", "category": "saas_subscription", "amount": 299.00, "description": "10-seat standard plan"},
+    {"date": "2026-02-12", "source": "Consulting Project X", "category": "consulting", "amount": 3500.00, "description": "3-day onboarding engagement"},
+    {"date": "2026-02-13", "source": "SMB Client C", "category": "saas_subscription", "amount": 199.00, "description": "5-seat starter plan"},
+    {"date": "2026-02-14", "source": "Referral Commission", "category": "affiliate", "amount": 150.00, "description": "Partner referral fee"},
+    {"date": "2026-02-16", "source": "Enterprise Client D", "category": "professional_services", "amount": 2800.00, "description": "Custom integration project"}
+  ],
+  "expenses": [
+    {"date": "2026-02-10", "vendor": "AWS", "category": "infrastructure", "amount": 142.37, "description": "February AWS bill"},
+    {"date": "2026-02-10", "vendor": "GitHub", "category": "tooling", "amount": 21.00, "description": "Team GitHub plan"},
+    {"date": "2026-02-12", "vendor": "Notion", "category": "tooling", "amount": 16.00, "description": "Workspace plan"},
+    {"date": "2026-02-12", "vendor": "Slack", "category": "communication", "amount": 87.50, "description": "Pro plan — 7 seats"},
+    {"date": "2026-02-13", "vendor": "CloudHost", "category": "infrastructure", "amount": 249.00, "description": "Invoice #4820 — hosting"},
+    {"date": "2026-02-14", "vendor": "Zoom", "category": "communication", "amount": 149.90, "description": "Business plan"},
+    {"date": "2026-02-15", "vendor": "Figma", "category": "design", "amount": 45.00, "description": "Starter plan"},
+    {"date": "2026-02-16", "vendor": "HubSpot", "category": "crm", "amount": 400.00, "description": "Starter CRM — monthly"}
+  ]
+}

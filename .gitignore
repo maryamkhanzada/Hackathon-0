@@ -1,0 +1,24 @@
+# Secrets — never commit
+credentials.json
+token.json
+.env
+
+# Playwright browser sessions (contain auth cookies)
+.whatsapp_session/
+.linkedin_session/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Obsidian internals
+.obsidian/
+
+# Node
+node_modules/

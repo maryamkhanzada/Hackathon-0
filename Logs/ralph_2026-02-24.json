@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2026-02-24T21:26:58.434527",
+    "task_id": "20260224_2100_Process_Test_Task_Until_Done",
+    "success": true,
+    "iterations": 3,
+    "elapsed_secs": 0.9,
+    "termination_reason": "promise",
+    "final_step": "execute",
+    "error": null,
+    "history": [
+      {
+        "iteration": 1,
+        "step": "plan",
+        "started_at": "2026-02-24T16:26:57.560769+00:00",
+        "ended_at": "2026-02-24T16:26:57.560769+00:00",
+        "outcome": "step_complete",
+        "detail": "Completion file found: Plans/PLAN_20260224_2100_Process_Test_Task_Until_Done.md",
+        "elapsed_secs": 0.03200000000651926
+      },
+      {
+        "iteration": 2,
+        "step": "approve",
+        "started_at": "2026-02-24T16:26:57.850698+00:00",
+        "ended_at": "2026-02-24T16:26:57.854951+00:00",
+        "outcome": "step_complete",
+        "detail": "Completion file found: Approved/20260224_2100_Process_Test_Task_Until_Done.md",
+        "elapsed_secs": 0.32900000002700835
+      },
+      {
+        "iteration": 3,
+        "step": "execute",
+        "started_at": "2026-02-24T16:26:58.434527+00:00",
+        "ended_at": "2026-02-24T16:26:58.434527+00:00",
+        "outcome": "promise_tag_found",
+        "detail": "<promise>TASK_COMPLETE</promise> detected",
+        "elapsed_secs": 0.9070000000065193
+      }
+    ]
+  }
+]

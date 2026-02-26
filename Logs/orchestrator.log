@@ -1,0 +1,4 @@
+2026-02-20 13:59:56,524 [orchestrator] INFO: === Processing cycle started ===
+2026-02-20 13:59:58,379 [orchestrator] INFO: Cycle complete: needs_action=0, pending=0, executed=0, expired=0, in_progress=12
+2026-02-20 14:00:58,184 [orchestrator] INFO: Generating daily summary ...
+2026-02-20 14:00:58,325 [orchestrator] INFO: Daily summary written to daily_summary_2026-02-20.md

@@ -1,0 +1,45 @@
+[
+  {
+    "timestamp": "2026-02-23T21:15:52.187366",
+    "event": "test_invocation",
+    "server": "email",
+    "tool": "draft_email",
+    "result": "skipped (email_mcp is .mjs — use: DRY_RUN=true node email_mcp.mjs)"
+  },
+  {
+    "timestamp": "2026-02-23T21:15:52.839288",
+    "event": "test_invocation",
+    "server": "fb_ig",
+    "tool": "draft_fb_post",
+    "result": "FB post draft saved to Plans/FB_IG_DRAFT_FB_20260223_211552.md."
+  },
+  {
+    "timestamp": "2026-02-23T21:15:54.862862",
+    "event": "test_invocation",
+    "server": "x",
+    "tool": "draft_x_post",
+    "result": "X post draft saved to Plans/X_DRAFT_20260223_211554.md"
+  },
+  {
+    "timestamp": "2026-02-23T21:15:55.101152",
+    "event": "test_run_complete",
+    "date": "2026-02-23",
+    "results": [
+      {
+        "server": "email",
+        "tool": "draft_email",
+        "result": "skipped (email_mcp is .mjs — use: DRY_RUN=true node email_mcp.mjs)"
+      },
+      {
+        "server": "fb_ig",
+        "tool": "draft_fb_post",
+        "result": "FB post draft saved to Plans/FB_IG_DRAFT_FB_20260223_211552.md."
+      },
+      {
+        "server": "x",
+        "tool": "draft_x_post",
+        "result": "X post draft saved to Plans/X_DRAFT_20260223_211554.md"
+      }
+    ]
+  }
+]

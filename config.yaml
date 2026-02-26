@@ -1,0 +1,91 @@
+# config.yaml — Central configuration for Personal AI Employee
+# All paths are relative to vault root unless absolute.
+
+# Absolute path to the Obsidian vault root.
+vault_path: "D:/Hackathon-0"
+
+# How often watchers poll their sources (seconds).
+poll_interval_seconds: 120
+
+# Gmail Watcher (Silver Tier — is:unread is:important)
+gmail:
+  credentials_path: "D:/Hackathon-0/credentials.json"
+  token_path: "D:/Hackathon-0/token.json"
+  query: "is:unread is:important"
+  max_results: 10
+  poll_interval_seconds: 120
+
+# WhatsApp Watcher (Silver Tier — Playwright persistent context)
+whatsapp:
+  session_path: "D:/Hackathon-0/.whatsapp_session"
+  poll_interval_seconds: 30
+  keywords:
+    - urgent
+    - invoice
+    - payment
+    - pricing
+    - help
+
+# Facebook & Instagram MCP (Gold Tier)
+facebook:
+  page_id_env: "FB_PAGE_ID"
+  page_token_env: "FB_PAGE_ACCESS_TOKEN"
+  max_posts_per_day: 5
+  retry_max: 3
+  retry_backoff_seconds: 30
+  summary_schedule: "daily"
+  audit_dir: "D:/Hackathon-0/Audits"
+
+instagram:
+  account_id_env: "IG_ACCOUNT_ID"
+  access_token_env: "IG_ACCESS_TOKEN"
+  username_env: "IG_USERNAME"
+  password_env: "IG_PASSWORD"
+  max_posts_per_day: 5
+  retry_max: 3
+  retry_backoff_seconds: 30
+  summary_schedule: "daily"
+  playwright_fallback: true
+
+# Weekly Audit / CEO Briefing (Gold Tier)
+audit:
+  schedule: "0 7 * * 1"          # Every Monday at 07:00 (cron syntax)
+  age_threshold_days: 5           # In_Progress items older than this = bottleneck
+  high_expense_threshold: 200.0   # Flag unused subscriptions above this amount
+  fallback_revenue: 8148.00       # Last known weekly gross (used if accounting missing)
+  fallback_expenses: 1110.77      # Last known weekly expenses
+  briefings_dir: "D:/Hackathon-0/Briefings"
+  accounting_dir: "D:/Hackathon-0/Accounting"
+  ralph_integration: true         # Output <promise>AUDIT_COMPLETE</promise> for ralph_loop
+
+# X (Twitter) MCP (Gold Tier)
+x_twitter:
+  api_key_env: "X_API_KEY"
+  api_secret_env: "X_API_SECRET"
+  access_token_env: "X_ACCESS_TOKEN"
+  access_token_secret_env: "X_ACCESS_TOKEN_SECRET"
+  bearer_token_env: "X_BEARER_TOKEN"
+  client_id_env: "X_CLIENT_ID"
+  client_secret_env: "X_CLIENT_SECRET"
+  max_posts_per_day: 10
+  rate_limit_sleep_seconds: 900   # 15 minutes
+  rate_limit_max_retries: 3
+  token_refresh_grace_seconds: 120
+  pagination_max_tweets: 100
+  summary_schedule: "daily"
+  audit_dir: "D:/Hackathon-0/Audits"
+  refresh_token_path: "D:/Hackathon-0/.x_refresh_token"
+
+# LinkedIn Watcher (Silver Tier — Playwright sales lead monitor)
+linkedin:
+  session_path: "D:/Hackathon-0/.linkedin_session"
+  poll_interval_seconds: 120
+  keywords:
+    - interested
+    - buy
+    - quote
+    - pricing
+    - purchase
+    - proposal
+    - demo
+    - trial

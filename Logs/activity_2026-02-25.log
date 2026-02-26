@@ -1,0 +1,21 @@
+20:46:25 | gmail_watcher | START | poll_interval=120
+20:57:37 | gmail_watcher | START | poll_interval=120
+21:15:44 | gmail_watcher | START | poll_interval=120
+21:23:01 | gmail_watcher | ERROR | see log for traceback
+21:28:49 | gmail_watcher | ERROR | see log for traceback
+21:30:28 | gmail_watcher | START | poll_interval=120
+21:31:26 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_19c8b13f770bb700.md [critical]
+21:31:26 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_19c71524b007889e.md [high]
+21:31:26 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_19c52a8e323a7a8f.md [high]
+21:31:27 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_19bf5f7cfbe2f8eb.md [high]
+21:31:27 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_19bf5f6c95c04163.md [high]
+21:31:27 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_19bf5f5aa16cd2d0.md [high]
+21:31:27 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_19bacc6fff17f15d.md [high]
+21:31:27 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_19b520e2a18a3eb4.md [high]
+21:31:28 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_19b2da8a62971ea9.md [high]
+21:31:28 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_19a3bac8a6c3b5c9.md [high]
+21:31:28 | gmail_watcher | CHECK | found=10 created=10
+21:33:29 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_199b5aeef884d75d.md [high]
+21:33:29 | gmail_watcher | CHECK | found=1 created=1
+21:35:29 | gmail_watcher | CREATE_ACTION | EMAIL_gmail_19c95a67fd3edd57.md [high]
+21:35:29 | gmail_watcher | CHECK | found=1 created=1

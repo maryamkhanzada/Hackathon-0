@@ -1,0 +1,11 @@
+2026-02-23 21:12:09,814 [mcp_orch] INFO: Pool registered: email (node D:/Hackathon-0/email_mcp.mjs)
+2026-02-23 21:12:09,814 [mcp_orch] INFO: Pool registered: fb_ig (python D:/Hackathon-0/fb_ig_mcp.py)
+2026-02-23 21:12:09,814 [mcp_orch] INFO: Pool registered: x (python D:/Hackathon-0/x_mcp.py)
+2026-02-23 21:13:12,353 [mcp_orch] INFO: Pool registered: email (node D:/Hackathon-0/email_mcp.mjs)
+2026-02-23 21:13:12,353 [mcp_orch] INFO: Pool registered: fb_ig (python D:/Hackathon-0/fb_ig_mcp.py)
+2026-02-23 21:13:12,363 [mcp_orch] INFO: Pool registered: x (python D:/Hackathon-0/x_mcp.py)
+2026-02-23 21:15:52,171 [mcp_orch] INFO: Pool registered: email (node D:/Hackathon-0/email_mcp.mjs)
+2026-02-23 21:15:52,171 [mcp_orch] INFO: Pool registered: fb_ig (python D:/Hackathon-0/fb_ig_mcp.py)
+2026-02-23 21:15:52,171 [mcp_orch] INFO: Pool registered: x (python D:/Hackathon-0/x_mcp.py)
+2026-02-23 21:15:52,558 [mcp_orch] INFO: Draft created: FB_IG_DRAFT_FB_20260223_211552.md
+2026-02-23 21:15:54,686 [mcp_orch] INFO: X draft created: X_DRAFT_20260223_211554.md

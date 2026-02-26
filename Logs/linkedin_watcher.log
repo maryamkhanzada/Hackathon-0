@@ -1,0 +1,65 @@
+2026-02-19 21:36:36,558 [linkedin_watcher] INFO: Running in DEMO mode (no browser needed)
+2026-02-19 21:36:36,874 [linkedin_watcher] INFO: Created action file: LINKEDIN_linkedin_20260219_213636_demo001.md
+2026-02-19 21:36:37,106 [linkedin_watcher] INFO: Created action file: LINKEDIN_linkedin_20260219_213636_demo002.md
+2026-02-19 21:36:37,106 [linkedin_watcher] INFO: Demo done. 2 action file(s) created.
+2026-02-21 21:45:01,825 [linkedin_watcher] INFO: Starting LinkedIn watcher (poll every 120s, keywords: ['interested', 'buy', 'quote', 'pricing', 'purchase', 'proposal', 'demo', 'trial'])
+2026-02-21 21:45:13,773 [linkedin_watcher] INFO: Launching Playwright persistent context ...
+2026-02-21 21:45:13,775 [linkedin_watcher] INFO: Session path: D:\Hackathon-0\.linkedin_session
+2026-02-21 21:49:12,034 [linkedin_watcher] INFO: Navigated to LinkedIn.
+2026-02-21 21:51:12,078 [linkedin_watcher] WARNING: Feed not detected within 120s. You may need to log in manually in the browser window.
+2026-02-21 21:51:12,081 [linkedin_watcher] INFO: Scanning LinkedIn for sales leads (keywords: ['interested', 'buy', 'quote', 'pricing', 'purchase', 'proposal', 'demo', 'trial']) ...
+2026-02-21 21:51:42,176 [linkedin_watcher] ERROR: Error loading notifications page
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\linkedin_watcher.py", line 156, in _extract_notifications
+    self._page.goto(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 9054, in goto
+    self._sync(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.linkedin.com/notifications/", waiting until "domcontentloaded"
+
+2026-02-21 21:52:12,356 [linkedin_watcher] ERROR: Error loading messaging page
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\linkedin_watcher.py", line 215, in _extract_messages
+    self._page.goto(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 9054, in goto
+    self._sync(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.linkedin.com/messaging/", waiting until "domcontentloaded"
+
+2026-02-21 21:52:12,374 [linkedin_watcher] INFO: No notifications or unread messages found.
+2026-02-21 21:54:12,385 [linkedin_watcher] INFO: Scanning LinkedIn for sales leads (keywords: ['interested', 'buy', 'quote', 'pricing', 'purchase', 'proposal', 'demo', 'trial']) ...
+2026-02-21 21:55:23,863 [linkedin_watcher] INFO: No notifications or unread messages found.
+2026-02-21 21:57:23,866 [linkedin_watcher] INFO: Scanning LinkedIn for sales leads (keywords: ['interested', 'buy', 'quote', 'pricing', 'purchase', 'proposal', 'demo', 'trial']) ...
+2026-02-21 21:59:06,102 [linkedin_watcher] INFO: No notifications or unread messages found.
+2026-02-21 22:01:06,117 [linkedin_watcher] INFO: Scanning LinkedIn for sales leads (keywords: ['interested', 'buy', 'quote', 'pricing', 'purchase', 'proposal', 'demo', 'trial']) ...
+2026-02-21 22:01:46,838 [linkedin_watcher] INFO: No notifications or unread messages found.
+2026-02-21 22:03:46,841 [linkedin_watcher] INFO: Scanning LinkedIn for sales leads (keywords: ['interested', 'buy', 'quote', 'pricing', 'purchase', 'proposal', 'demo', 'trial']) ...
+2026-02-21 22:04:22,362 [linkedin_watcher] INFO: No notifications or unread messages found.

@@ -1,0 +1,9 @@
+20:53:43 | whatsapp_watcher | START | poll_interval=30
+20:53:57 | linkedin_watcher | START | poll_interval=120
+20:55:30 | gmail_watcher | START | poll_interval=120
+20:55:45 | gmail_watcher | ERROR | see log for traceback
+20:56:49 | whatsapp_watcher | ERROR | see log for traceback
+20:58:05 | gmail_watcher | ERROR | see log for traceback
+21:00:15 | gmail_watcher | ERROR | see log for traceback
+21:02:44 | gmail_watcher | ERROR | see log for traceback
+21:05:09 | gmail_watcher | CHECK | found=10 created=0

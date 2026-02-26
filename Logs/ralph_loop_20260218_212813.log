@@ -1,0 +1,118 @@
+[21:28:13] ==========================================
+[21:28:14] Ralph Wiggum Loop â€” Starting
+[21:28:15] Vault:      /d/Hackathon-0
+[21:28:15] Max loops:  2
+[21:28:16] Cooldown:   5s
+[21:28:17] Dry run:    true
+[21:28:18] Task ID:    <none>
+[21:28:19] ==========================================
+[21:28:23] Items in Needs_Action: 3
+[21:28:25] ------------------------------------------
+[21:28:26] Iteration 1/2  |  Remaining: 3
+[21:28:26] ------------------------------------------
+[21:28:29] [DRY RUN] Would invoke Claude Code with prompt:
+[21:28:29] --- PROMPT START ---
+You are the Personal AI Employee processing the Obsidian vault at /d/Hackathon-0.
+
+**Loop iteration:** 1 of 2
+**Items remaining:** 3
+**Timestamp:** 2026-02-18 21:28
+
+---
+
+## Your Instructions
+
+Follow Company_Handbook.md rules at all times. You have these autonomous permissions:
+- Read any file
+- Summarize documents
+- Create notes in Inbox/
+- Move items from Needs_Action/ to Done/
+- Update Dashboard.md
+
+You MUST NOT: send messages, spend money, delete files, or modify Company_Handbook.md.
+
+---
+
+## Processing Steps
+
+### Step 1 â€” Scan
+
+Read every `.md` file in `/d/Hackathon-0/Needs_Action/`.
+For each file, parse the YAML frontmatter and note the `priority` and `status`.
+
+### Step 2 â€” Triage and Act
+
+For each item:
+
+| If the item...                         | Then...                                           |
+| -------------------------------------- | ------------------------------------------------- |
+| Can be handled autonomously            | Set frontmatter `status: done`, note what you did |
+| Needs human decision (send msg, spend) | Leave as `status: open`, add a triage comment     |
+| Is informational / low priority        | Set `status: done` with summary note              |
+
+### Step 3 â€” Run Vault Processor
+
+Execute:
+```bash
+python /d/Hackathon-0/watchers/vault_processor.py
+```
+
+This will:
+- Update Dashboard.md with live counts
+- Move all `status: done` items to Done/
+- Log the activity
+
+### Step 4 â€” Verify
+
+Check that:
+- Items you marked `done` have moved to `Done/`
+- Dashboard.md reflects the current state
+- Any items still in Needs_Action/ genuinely require human input
+
+### Step 5 â€” Signal Completion
+
+**If Needs_Action/ is empty** OR **only human-approval items remain**:
+
+Output exactly this line:
+
+```
+<promise>TASK_COMPLETE</promise>
+```
+
+**If you can still make progress** on remaining items, do NOT output the
+promise tag.  The loop will re-invoke you for another pass.
+
+---
+
+## Important
+
+- Process items by priority: critical > high > medium > low
+- Be thorough â€” check your work before signaling completion
+- If you're unsure whether an item needs human approval, leave it open
+- Each iteration should make measurable progress
+[21:28:30] --- PROMPT END ---
+[21:28:30] [DRY RUN] Simulating vault_processor.py instead...
+=== Vault Processor ===
+Vault: D:\Hackathon-0
+
+## Vault Scan — 2026-02-18 21:28
+
+### Needs_Action (3 items)
+
+| # | Priority | Title | Source | Created |
+|---|----------|-------|--------|---------|
+| 1 | high | Email: Quarterly Report Due Friday | gmail_watcher | 2026-02-18 09:00 |
+| 2 | medium | Email: Invoice #4821 from CloudHost | gmail_watcher | 2026-02-18 10:15 |
+| 3 | low | Email: Team Lunch Poll — Vote by Wednesday | gmail_watcher | 2026-02-18 11:30 |
+
+### Summary
+- Priority — high: 1 | low: 1 | medium: 1
+- Sources — gmail_watcher: 3
+- Oldest item: 2026-02-18 09:00
+
+[scan-only mode — no files modified]
+[21:28:32] [DRY RUN] Simulating promise output.
+[21:28:34] ==========================================
+[21:28:34] RESULT: Task complete.
+[21:28:35] <promise>TASK_COMPLETE</promise>
+[21:28:36] ==========================================

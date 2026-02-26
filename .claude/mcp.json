@@ -1,0 +1,45 @@
+{
+  "mcpServers": {
+    "email": {
+      "command": "node",
+      "args": ["D:/Hackathon-0/email_mcp.mjs"],
+      "env": {
+        "VAULT_PATH": "D:/Hackathon-0",
+        "DRY_RUN": "false",
+        "GMAIL_USER": "${GMAIL_USER}",
+        "GMAIL_CLIENT_ID": "${GMAIL_CLIENT_ID}",
+        "GMAIL_CLIENT_SECRET": "${GMAIL_CLIENT_SECRET}",
+        "GMAIL_REFRESH_TOKEN": "${GMAIL_REFRESH_TOKEN}"
+      }
+    },
+    "fb_ig": {
+      "command": "python",
+      "args": ["D:/Hackathon-0/fb_ig_mcp.py"],
+      "env": {
+        "VAULT_PATH": "D:/Hackathon-0",
+        "DRY_RUN": "false",
+        "FB_PAGE_ACCESS_TOKEN": "${FB_PAGE_ACCESS_TOKEN}",
+        "FB_PAGE_ID": "${FB_PAGE_ID}",
+        "IG_USERNAME": "${IG_USERNAME}",
+        "IG_PASSWORD": "${IG_PASSWORD}",
+        "IG_ACCESS_TOKEN": "${IG_ACCESS_TOKEN}",
+        "IG_ACCOUNT_ID": "${IG_ACCOUNT_ID}"
+      }
+    },
+    "x": {
+      "command": "python",
+      "args": ["D:/Hackathon-0/x_mcp.py"],
+      "env": {
+        "VAULT_PATH": "D:/Hackathon-0",
+        "DRY_RUN": "false",
+        "X_API_KEY": "${X_API_KEY}",
+        "X_API_SECRET": "${X_API_SECRET}",
+        "X_ACCESS_TOKEN": "${X_ACCESS_TOKEN}",
+        "X_ACCESS_TOKEN_SECRET": "${X_ACCESS_TOKEN_SECRET}",
+        "X_BEARER_TOKEN": "${X_BEARER_TOKEN}",
+        "X_CLIENT_ID": "${X_CLIENT_ID}",
+        "X_CLIENT_SECRET": "${X_CLIENT_SECRET}"
+      }
+    }
+  }
+}

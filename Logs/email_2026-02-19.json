@@ -1,0 +1,21 @@
+[
+  {
+    "timestamp": "2026-02-19T17:20:59.021Z",
+    "dry_run": false,
+    "action": "draft_email",
+    "status": "created",
+    "draft_path": "D:\\Hackathon-0\\Plans\\EMAIL_DRAFT_2026-02-19T1720_Test_Draft.md",
+    "to": "test@example.com",
+    "subject": "Test Draft"
+  },
+  {
+    "timestamp": "2026-02-19T17:26:34.412Z",
+    "dry_run": true,
+    "action": "send_email",
+    "status": "dry_run",
+    "to": "boss@example.com",
+    "subject": "Test Send",
+    "body_preview": "This is a dry run test.",
+    "attachments": []
+  }
+]

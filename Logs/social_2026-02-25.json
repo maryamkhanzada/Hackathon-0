@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "2026-02-25T21:38:24.901344",
+    "action": "draft_fb_post",
+    "status": "created",
+    "draft_file": "D:\\Hackathon-0\\Plans\\FB_IG_DRAFT_FB_20260225_213824.md",
+    "approval_file": "D:\\Hackathon-0\\Pending_Approval\\APPROVAL_FB_IG_DRAFT_FB_20260225_213824.md",
+    "platform": "fb",
+    "dry_run": true
+  },
+  {
+    "timestamp": "2026-02-25T21:38:25.143310",
+    "action": "draft_ig_post",
+    "status": "created",
+    "draft_file": "D:\\Hackathon-0\\Plans\\FB_IG_DRAFT_IG_20260225_213824.md",
+    "approval_file": "D:\\Hackathon-0\\Pending_Approval\\APPROVAL_FB_IG_DRAFT_IG_20260225_213824.md",
+    "platform": "ig",
+    "dry_run": true
+  },
+  {
+    "timestamp": "2026-02-25T21:38:25.407624",
+    "action": "fetch_fb_summary",
+    "status": "dry_run_mock",
+    "audit_file": "D:\\Hackathon-0\\Audits\\FB_IG_Summary_FB_2026-02-25.md"
+  },
+  {
+    "timestamp": "2026-02-25T21:38:25.520967",
+    "action": "fetch_ig_summary",
+    "status": "dry_run_mock",
+    "audit_file": "D:\\Hackathon-0\\Audits\\FB_IG_Summary_IG_2026-02-25.md"
+  },
+  {
+    "timestamp": "2026-02-25T21:38:25.836104",
+    "action": "post_fb",
+    "status": "blocked_no_approval",
+    "draft": "nonexistent_draft.md"
+  },
+  {
+    "timestamp": "2026-02-25T22:00:59.731390",
+    "action": "post_fb",
+    "status": "dry_run",
+    "draft": "FB_IG_DRAFT_FB_20260225_2146.md"
+  },
+  {
+    "timestamp": "2026-02-25T22:00:59.967363",
+    "action": "post_ig",
+    "status": "dry_run",
+    "draft": "FB_IG_DRAFT_IG_20260225_2146.md"
+  }
+]

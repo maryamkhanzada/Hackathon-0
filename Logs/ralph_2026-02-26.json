@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": "2026-02-26T20:45:42.500950",
+    "task_id": "20260224_2100_Process_Test_Task_Until_Done",
+    "success": true,
+    "iterations": 1,
+    "elapsed_secs": 1.2,
+    "termination_reason": "done",
+    "final_step": "execute",
+    "error": null,
+    "history": [
+      {
+        "iteration": 1,
+        "step": "execute",
+        "started_at": "2026-02-26T15:45:41.311210+00:00",
+        "ended_at": "2026-02-26T15:45:42.437966+00:00",
+        "outcome": "step_complete",
+        "detail": "Promise tag 'TASK_COMPLETE' found in README_Gold.md",
+        "elapsed_secs": 1.187999999965541
+      }
+    ]
+  }
+]
