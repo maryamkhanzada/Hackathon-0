@@ -1,21 +1,26 @@
 # Dashboard
 
-> **Last Updated:** 2026-02-25 20:40
+> **Last Updated:** 2026-03-03 09:00
 > **Status:** Gold Tier Complete
 
 
 ## Awaiting Your Approval
 
-- _No pending approvals._
+- [x] **FB** — `Approved/APPROVAL_FB_IG_DRAFT_FB_20260303_0900.md` — Education post (Facebook) — DRY_RUN (configure `.env` for live posting)
+- [ ] **IG** — `Pending_Approval/APPROVAL_FB_IG_DRAFT_IG_20260303_0900.md` — Education post (Instagram) ⚠️ image required
+- [ ] **X** — `Pending_Approval/APPROVAL_X_DRAFT_20260303_0900.md` — Education tweet (199/280 chars)
+- [ ] **LinkedIn** — `Pending_Approval/APPROVAL_LINKEDIN_DRAFT_20260303_0900.md` — Education thought-leadership post (manual)
 
-## Last Execution: Education Posts (2026-02-25 21:46)
+> Move each file to `Approved/` to publish, or `Rejected/` to discard.
+
+## Last Execution: Education Posts (2026-03-03 09:00)
 
 | Platform | Status | Details |
 |----------|--------|---------|
-| Facebook | DRY_RUN — needs credentials | `FB_IG_DRAFT_FB_20260225_2146.md` approved + executed |
-| Instagram | DRY_RUN — needs credentials + image | `FB_IG_DRAFT_IG_20260225_2146.md` approved + executed |
-| X (Twitter) | DRY_RUN — needs credentials | `X_DRAFT_20260225_2146.md` approved + executed |
-| LinkedIn | Manual post required | No posting MCP yet — draft ready at `Plans/LINKEDIN_DRAFT_20260225_2146.md` |
+| Facebook | DRY_RUN — needs credentials | `FB_IG_DRAFT_FB_20260303_0900.md` approved + executed |
+| Instagram | Awaiting approval + image | Draft: `Plans/FB_IG_DRAFT_IG_20260303_0900.md` |
+| X (Twitter) | Awaiting approval | Draft: `Plans/X_DRAFT_20260303_0900.md` (199/280 chars) |
+| LinkedIn | Manual post required | Draft: `Plans/LINKEDIN_DRAFT_20260303_0900.md` — no posting MCP |
 
 
 ---
@@ -67,7 +72,7 @@ FROM "Pending_Approval"
 SORT priority DESC
 ```
 
-**Items Pending Approval:** 0
+**Items Pending Approval:** 3
 
 ---
 
@@ -126,13 +131,13 @@ _Week: 2026-W08 (Feb 16–22)_  **Generated:** 2026-02-23 21:31  **File:** `Brie
 
 ## MCP Status
 
-_Updated: 2026-02-26 21:13_  **Cycle:** #28  **Servers:** 3
+_Updated: 2026-02-26 21:16_  **Cycle:** #30  **Servers:** 3
 
 | Instance | Status | PID | Last Ping | Restarts | Started |
 |----------|--------|-----|-----------|----------|---------|
-| email#0 | running | 1204 | ✓ 21:13:52 | 0 | 2026-02-26 20:45:19 |
-| fb_ig#0 | running | 18420 | ✓ 21:13:52 | 0 | 2026-02-26 20:45:19 |
-| x#0 | running | 15832 | ✓ 21:13:52 | 0 | 2026-02-26 20:45:20 |
+| email#0 | running | 1204 | ✓ 21:15:55 | 0 | 2026-02-26 20:45:19 |
+| fb_ig#0 | degraded | 18420 | ✗ 21:16:01 | 0 | 2026-02-26 20:45:19 |
+| x#0 | running | 15832 | ✓ 21:16:02 | 0 | 2026-02-26 20:45:20 |
 
 ## X (Twitter)
 
@@ -372,6 +377,8 @@ python tests/test_bronze_e2e.py && python tests/test_gold_e2e.py
 
 | Time | Action | Result |
 | ---- | ------ | ------ |
+| 09:05 | Facebook education post approved + executed | HITL gate passed; post_fb DRY_RUN (configure FB_PAGE_ACCESS_TOKEN in .env for live posting) |
+| 09:00 | Education posts drafted (4 platforms) | FB + IG + X + LinkedIn drafts created; 4 HITL approvals queued in Pending_Approval/; LinkedIn manual post required (no posting MCP) |
 | 21:46 | Education posts executed (4 platforms) | HITL approved; FB + IG + X fired (DRY_RUN — configure .env for live posting); LinkedIn manual post required (no posting MCP) |
 | 20:40 | Gold Skills Consolidated | 19/19 E2E tests PASS; 2 new skills (SKILL_Gold_Documentation, SKILL_E2E_Gold_Test); full pipeline verified; Dashboard: Gold Tier Complete |
 | 21:30 | Ralph Wiggum Loops enabled | ralph_loop.py + orchestrator patch; 3-step dry-run test 15/15 PASS; auto-trigger via _scan_needs_action(); SKILL_ralph_loop.md v2.0 |
@@ -399,11 +406,11 @@ python tests/test_bronze_e2e.py && python tests/test_gold_e2e.py
 
 ## Watchdog Status
 
-_Updated: 2026-02-26 21:14_  **Interval:** 60s  **Degraded:** No
+_Updated: 2026-02-26 21:16_  **Interval:** 60s  **Degraded:** No
 
 | Process | Alive | Restarts | Last Seen |
 |---------|-------|----------|-----------|
-| mcp_orchestrator | OK | 1 | 2026-02-26T21:14:07.569839 |
-| gmail_watcher | OK | 1 | 2026-02-26T21:14:07.569839 |
-| whatsapp_watcher | OK | 1 | 2026-02-26T21:14:07.569839 |
-| linkedin_watcher | OK | 1 | 2026-02-26T21:14:07.569839 |
+| mcp_orchestrator | OK | 1 | 2026-02-26T21:16:08.258440 |
+| gmail_watcher | OK | 1 | 2026-02-26T21:16:08.258440 |
+| whatsapp_watcher | OK | 1 | 2026-02-26T21:16:08.258440 |
+| linkedin_watcher | OK | 1 | 2026-02-26T21:16:08.258440 |

@@ -232,3 +232,400 @@ oauthlib.oauth2.rfc6749.errors.AccessDeniedError: (access_denied)
 2026-02-25 22:56:00,898 [gmail_watcher] INFO: Found 10 message(s) to process.
 2026-02-25 22:58:00,910 [gmail_watcher] INFO: Querying Gmail: is:unread is:important
 2026-02-25 22:58:01,318 [gmail_watcher] INFO: Found 10 message(s) to process.
+2026-02-26 20:55:30,671 [gmail_watcher] INFO: Starting continuous Gmail watcher (poll every 120s, query: is:unread is:important)
+2026-02-26 20:55:30,813 [gmail_watcher] INFO: Refreshing expired token ...
+2026-02-26 20:55:43,341 [gmail_watcher] ERROR: Error during check cycle
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\auth\transport\requests.py", line 188, in __call__
+    response = self.session.request(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 522, in main
+    items = watcher.check()
+            ^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 251, in check
+    service = self._get_service()
+              ^^^^^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 146, in _get_service
+    creds = self._authenticate()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 113, in _authenticate
+    creds.refresh(Request())
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\credentials.py", line 412, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\reauth.py", line 337, in refresh_grant
+    ) = _client._token_endpoint_request_no_throw(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\_client.py", line 192, in _token_endpoint_request_no_throw
+    response = request(
+               ^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\auth\transport\requests.py", line 195, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-02-26 20:57:45,624 [gmail_watcher] INFO: Refreshing expired token ...
+2026-02-26 20:58:04,484 [gmail_watcher] ERROR: Error during check cycle
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connection.py", line 796, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connection.py", line 975, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\util\ssl_.py", line 483, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\util\ssl_.py", line 527, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "C:\Program Files\Python312\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\auth\transport\requests.py", line 188, in __call__
+    response = self.session.request(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\adapters.py", line 675, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 522, in main
+    items = watcher.check()
+            ^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 251, in check
+    service = self._get_service()
+              ^^^^^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 146, in _get_service
+    creds = self._authenticate()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 113, in _authenticate
+    creds.refresh(Request())
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\credentials.py", line 412, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\reauth.py", line 337, in refresh_grant
+    ) = _client._token_endpoint_request_no_throw(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\_client.py", line 192, in _token_endpoint_request_no_throw
+    response = request(
+               ^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\auth\transport\requests.py", line 195, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-02-26 21:00:05,059 [gmail_watcher] INFO: Refreshing expired token ...
+2026-02-26 21:00:15,887 [gmail_watcher] ERROR: Error during check cycle
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Program Files\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\auth\transport\requests.py", line 188, in __call__
+    response = self.session.request(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 522, in main
+    items = watcher.check()
+            ^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 251, in check
+    service = self._get_service()
+              ^^^^^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 146, in _get_service
+    creds = self._authenticate()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 113, in _authenticate
+    creds.refresh(Request())
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\credentials.py", line 412, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\reauth.py", line 337, in refresh_grant
+    ) = _client._token_endpoint_request_no_throw(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\_client.py", line 192, in _token_endpoint_request_no_throw
+    response = request(
+               ^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\auth\transport\requests.py", line 195, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-02-26 21:02:15,960 [gmail_watcher] INFO: Refreshing expired token ...
+2026-02-26 21:02:43,885 [gmail_watcher] ERROR: Error during check cycle
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<HTTPSConnection(host='oauth2.googleapis.com', port=443) at 0x1f9e317b110>, 'Connection to oauth2.googleapis.com timed out. (connect timeout=120)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by ConnectTimeoutError(<HTTPSConnection(host='oauth2.googleapis.com', port=443) at 0x1f9e317b110>, 'Connection to oauth2.googleapis.com timed out. (connect timeout=120)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\auth\transport\requests.py", line 188, in __call__
+    response = self.session.request(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\requests\adapters.py", line 665, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by ConnectTimeoutError(<HTTPSConnection(host='oauth2.googleapis.com', port=443) at 0x1f9e317b110>, 'Connection to oauth2.googleapis.com timed out. (connect timeout=120)'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 522, in main
+    items = watcher.check()
+            ^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 251, in check
+    service = self._get_service()
+              ^^^^^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 146, in _get_service
+    creds = self._authenticate()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\gmail_watcher.py", line 113, in _authenticate
+    creds.refresh(Request())
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\credentials.py", line 412, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\reauth.py", line 337, in refresh_grant
+    ) = _client._token_endpoint_request_no_throw(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\oauth2\_client.py", line 192, in _token_endpoint_request_no_throw
+    response = request(
+               ^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\google\auth\transport\requests.py", line 195, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by ConnectTimeoutError(<HTTPSConnection(host='oauth2.googleapis.com', port=443) at 0x1f9e317b110>, 'Connection to oauth2.googleapis.com timed out. (connect timeout=120)'))
+2026-02-26 21:04:44,031 [gmail_watcher] INFO: Refreshing expired token ...
+2026-02-26 21:04:53,614 [gmail_watcher] INFO: Token saved to D:\Hackathon-0\token.json
+2026-02-26 21:04:53,676 [googleapiclient.discovery_cache] INFO: file_cache is only supported with oauth2client<4.0.0
+2026-02-26 21:04:54,043 [gmail_watcher] INFO: Querying Gmail: is:unread is:important
+2026-02-26 21:05:05,635 [gmail_watcher] INFO: Found 10 message(s) to process.
+2026-02-26 21:05:09,192 [gmail_watcher] INFO: Skipping duplicate: gmail_19c71524b007889e
+2026-02-26 21:05:09,224 [gmail_watcher] INFO: Skipping duplicate: gmail_19c52a8e323a7a8f
+2026-02-26 21:05:09,272 [gmail_watcher] INFO: Skipping duplicate: gmail_19bf5f7cfbe2f8eb
+2026-02-26 21:05:09,300 [gmail_watcher] INFO: Skipping duplicate: gmail_19bf5f6c95c04163
+2026-02-26 21:05:09,337 [gmail_watcher] INFO: Skipping duplicate: gmail_19bf5f5aa16cd2d0
+2026-02-26 21:05:09,352 [gmail_watcher] INFO: Skipping duplicate: gmail_19bacc6fff17f15d
+2026-02-26 21:05:09,384 [gmail_watcher] INFO: Skipping duplicate: gmail_19b520e2a18a3eb4
+2026-02-26 21:05:09,399 [gmail_watcher] INFO: Skipping duplicate: gmail_19b2da8a62971ea9
+2026-02-26 21:05:09,415 [gmail_watcher] INFO: Skipping duplicate: gmail_19a3bac8a6c3b5c9
+2026-02-26 21:05:09,431 [gmail_watcher] INFO: Skipping duplicate: gmail_199b5aeef884d75d
+2026-02-26 21:07:09,452 [gmail_watcher] INFO: Querying Gmail: is:unread is:important
+2026-02-26 21:07:09,696 [gmail_watcher] INFO: Found 10 message(s) to process.
+2026-02-26 21:09:09,699 [gmail_watcher] INFO: Querying Gmail: is:unread is:important
+2026-02-26 21:09:09,925 [gmail_watcher] INFO: Found 10 message(s) to process.
+2026-02-26 21:11:09,937 [gmail_watcher] INFO: Querying Gmail: is:unread is:important
+2026-02-26 21:11:10,159 [gmail_watcher] INFO: Found 10 message(s) to process.
+2026-02-26 21:13:10,177 [gmail_watcher] INFO: Querying Gmail: is:unread is:important
+2026-02-26 21:13:10,425 [gmail_watcher] INFO: Found 10 message(s) to process.
+2026-02-26 21:15:10,428 [gmail_watcher] INFO: Querying Gmail: is:unread is:important
+2026-02-26 21:15:10,952 [gmail_watcher] INFO: Found 10 message(s) to process.

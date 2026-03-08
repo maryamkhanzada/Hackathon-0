@@ -9,3 +9,77 @@
 2026-02-23 21:15:52,171 [mcp_orch] INFO: Pool registered: x (python D:/Hackathon-0/x_mcp.py)
 2026-02-23 21:15:52,558 [mcp_orch] INFO: Draft created: FB_IG_DRAFT_FB_20260223_211552.md
 2026-02-23 21:15:54,686 [mcp_orch] INFO: X draft created: X_DRAFT_20260223_211554.md
+2026-02-26 20:45:19,128 [mcp_orch] INFO: Pool registered: email (node D:/Hackathon-0/email_mcp.mjs)
+2026-02-26 20:45:19,132 [mcp_orch] INFO: Pool registered: fb_ig (python D:/Hackathon-0/fb_ig_mcp.py)
+2026-02-26 20:45:19,132 [mcp_orch] INFO: Pool registered: x (python D:/Hackathon-0/x_mcp.py)
+2026-02-26 20:45:19,132 [mcp_orch] INFO: ============================================================
+2026-02-26 20:45:19,132 [mcp_orch] INFO: MCP ORCHESTRATOR STARTING — 3 server(s)
+2026-02-26 20:45:19,132 [mcp_orch] INFO: Health interval: 60s  Ping timeout: 5s
+2026-02-26 20:45:19,132 [mcp_orch] INFO: ============================================================
+2026-02-26 20:45:19,270 [mcp_orch] INFO: [email#0] Started (PID 1204)
+2026-02-26 20:45:19,969 [mcp_orch] INFO: [fb_ig#0] Started (PID 18420)
+2026-02-26 20:45:20,731 [mcp_orch] INFO: [x#0] Started (PID 15832)
+2026-02-26 20:45:37,739 [mcp_orch] INFO: [ralph] Launching loop for: 20260224_2100_Process_Test_Task_Until_Done.md (priority=high)
+2026-02-26 20:45:40,807 [mcp_orch] INFO: Health #1: email=0/1 | fb_ig=0/1 | x=0/1 queued=0
+2026-02-26 20:46:41,252 [mcp_orch] INFO: [ralph] Loop for 20260224_2100_Process_Test_Task_Until_Done exited (rc=0, success)
+2026-02-26 20:46:41,472 [mcp_orch] INFO: Health #2: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:47:43,317 [mcp_orch] INFO: Health #3: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:48:44,707 [mcp_orch] INFO: Health #4: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:49:46,005 [mcp_orch] INFO: Health #5: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:50:47,321 [mcp_orch] INFO: Health #6: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:51:48,711 [mcp_orch] INFO: Health #7: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:52:49,950 [mcp_orch] INFO: Health #8: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:53:18,831 [mcp_orch] INFO: Pool registered: email (node D:/Hackathon-0/email_mcp.mjs)
+2026-02-26 20:53:18,847 [mcp_orch] INFO: Pool registered: fb_ig (python D:/Hackathon-0/fb_ig_mcp.py)
+2026-02-26 20:53:18,847 [mcp_orch] INFO: Pool registered: x (python D:/Hackathon-0/x_mcp.py)
+2026-02-26 20:53:18,847 [mcp_orch] INFO: ============================================================
+2026-02-26 20:53:18,847 [mcp_orch] INFO: MCP ORCHESTRATOR STARTING — 3 server(s)
+2026-02-26 20:53:18,847 [mcp_orch] INFO: Health interval: 60s  Ping timeout: 5s
+2026-02-26 20:53:18,847 [mcp_orch] INFO: ============================================================
+2026-02-26 20:53:19,089 [mcp_orch] INFO: [email#0] Started (PID 8080)
+2026-02-26 20:53:19,796 [mcp_orch] INFO: [fb_ig#0] Started (PID 6420)
+2026-02-26 20:53:20,501 [mcp_orch] INFO: [x#0] Started (PID 11896)
+2026-02-26 20:53:40,547 [mcp_orch] INFO: Health #1: email=0/1 | fb_ig=0/1 | x=0/1 queued=0
+2026-02-26 20:53:55,177 [mcp_orch] INFO: Health #9: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:54:42,783 [mcp_orch] INFO: Health #2: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:54:58,743 [mcp_orch] INFO: Health #10: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:55:45,126 [mcp_orch] INFO: Health #3: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:56:01,889 [mcp_orch] INFO: Health #11: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:56:58,542 [mcp_orch] INFO: Health #4: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:57:05,654 [mcp_orch] INFO: Health #12: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:57:59,353 [mcp_orch] INFO: Health #5: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:58:09,088 [mcp_orch] INFO: Health #13: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:59:00,644 [mcp_orch] INFO: Health #6: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 20:59:10,863 [mcp_orch] INFO: Health #14: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:00:02,984 [mcp_orch] INFO: Health #7: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:00:12,476 [mcp_orch] INFO: Health #15: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:01:10,020 [mcp_orch] INFO: Health #8: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:01:17,508 [mcp_orch] INFO: Health #16: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:02:10,735 [mcp_orch] INFO: Health #9: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:02:19,247 [mcp_orch] INFO: Health #17: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:03:23,352 [mcp_orch] INFO: Health #10: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:03:28,618 [mcp_orch] INFO: Health #18: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:04:28,403 [mcp_orch] INFO: Health #11: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:04:31,011 [mcp_orch] INFO: Health #19: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:05:30,572 [mcp_orch] INFO: Health #12: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:05:32,641 [mcp_orch] INFO: Health #20: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:06:32,503 [mcp_orch] INFO: Health #13: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:06:35,527 [mcp_orch] INFO: Health #21: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:07:33,694 [mcp_orch] INFO: Health #14: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:07:37,426 [mcp_orch] INFO: Health #22: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:08:36,119 [mcp_orch] INFO: Health #15: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:08:39,935 [mcp_orch] INFO: Health #23: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:09:37,906 [mcp_orch] INFO: Health #16: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:09:41,654 [mcp_orch] INFO: Health #24: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:10:39,568 [mcp_orch] INFO: Health #17: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:10:44,017 [mcp_orch] INFO: Health #25: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:11:43,219 [mcp_orch] INFO: Health #18: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:11:49,760 [mcp_orch] INFO: Health #26: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:12:47,169 [mcp_orch] INFO: Health #19: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:12:51,416 [mcp_orch] INFO: Health #27: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:13:49,291 [mcp_orch] INFO: Health #20: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:13:53,232 [mcp_orch] INFO: Health #28: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:14:51,260 [mcp_orch] INFO: Health #21: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:14:55,153 [mcp_orch] INFO: Health #29: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:15:52,097 [mcp_orch] INFO: Health #22: email=1/1 | fb_ig=1/1 | x=1/1 queued=0
+2026-02-26 21:16:02,503 [mcp_orch] INFO: Health #30: email=1/1 | fb_ig=0/1 | x=1/1 queued=0

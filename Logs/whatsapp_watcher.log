@@ -1690,3 +1690,313 @@ Traceback (most recent call last):
     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
 playwright._impl._errors.TargetClosedError: Page.query_selector_all: Target page, context or browser has been closed
 2026-02-20 21:53:08,502 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 20:53:43,546 [whatsapp_watcher] INFO: Starting WhatsApp watcher (poll every 30s, keywords: ['urgent', 'invoice', 'payment', 'pricing', 'help'])
+2026-02-26 20:53:50,263 [whatsapp_watcher] INFO: Launching Playwright persistent context ...
+2026-02-26 20:53:50,263 [whatsapp_watcher] INFO: Session path: D:\Hackathon-0\.whatsapp_session
+2026-02-26 20:56:49,676 [whatsapp_watcher] ERROR: Error during check cycle
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 386, in run
+    items = self.check()
+            ^^^^^^^^^^^^
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 287, in check
+    self._ensure_browser()
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 116, in _ensure_browser
+    self._page.goto("https://web.whatsapp.com", wait_until="domcontentloaded")
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 9054, in goto
+    self._sync(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://web.whatsapp.com/", waiting until "domcontentloaded"
+
+2026-02-26 20:57:19,705 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 20:57:51,616 [whatsapp_watcher] ERROR: Error scanning unread chats
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 163, in _extract_unread_chats
+    unread_spans = self._page.query_selector_all(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 8146, in query_selector_all
+    self._sync(self._impl_obj.query_selector_all(selector=selector))
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 410, in query_selector_all
+    return await self._main_frame.query_selector_all(selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 355, in query_selector_all
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.query_selector_all: Execution context was destroyed, most likely because of a navigation
+2026-02-26 20:57:51,627 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 20:58:21,629 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 20:58:33,817 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 20:59:03,819 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 20:59:03,897 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 20:59:33,904 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 20:59:35,590 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:00:05,591 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:01:01,446 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:01:31,450 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:01:32,062 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:02:02,064 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:02:02,269 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:02:32,274 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:02:32,390 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:03:02,398 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:03:02,499 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:03:32,507 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:03:43,805 [whatsapp_watcher] INFO: Found 2 unread chat(s). Checking keywords ...
+2026-02-26 21:03:43,805 [whatsapp_watcher] INFO: Keyword matches: 0 actionable chat(s).
+2026-02-26 21:04:13,818 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:04:15,916 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:04:45,918 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:04:46,365 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:05:16,367 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:05:16,746 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:05:46,748 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:05:47,145 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:06:17,152 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:06:17,397 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:06:47,399 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:06:48,238 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:07:18,249 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:07:18,646 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:07:48,653 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:07:49,126 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:08:19,132 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:08:19,761 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:08:49,770 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:08:50,372 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:09:20,379 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:09:20,847 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:09:50,850 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:09:51,791 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:10:21,807 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:10:22,144 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:10:52,152 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:10:53,636 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:11:23,645 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:11:28,806 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:11:58,814 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:11:59,600 [whatsapp_watcher] ERROR: Error scanning unread chats
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 163, in _extract_unread_chats
+    unread_spans = self._page.query_selector_all(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 8146, in query_selector_all
+    self._sync(self._impl_obj.query_selector_all(selector=selector))
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 410, in query_selector_all
+    return await self._main_frame.query_selector_all(selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 355, in query_selector_all
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-26 21:11:59,636 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:12:29,698 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:12:29,729 [whatsapp_watcher] ERROR: Error scanning unread chats
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 163, in _extract_unread_chats
+    unread_spans = self._page.query_selector_all(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 8146, in query_selector_all
+    self._sync(self._impl_obj.query_selector_all(selector=selector))
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 410, in query_selector_all
+    return await self._main_frame.query_selector_all(selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 355, in query_selector_all
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-26 21:12:29,745 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:12:59,759 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:12:59,782 [whatsapp_watcher] ERROR: Error scanning unread chats
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 163, in _extract_unread_chats
+    unread_spans = self._page.query_selector_all(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 8146, in query_selector_all
+    self._sync(self._impl_obj.query_selector_all(selector=selector))
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 410, in query_selector_all
+    return await self._main_frame.query_selector_all(selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 355, in query_selector_all
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-26 21:12:59,788 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:13:29,796 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:13:29,816 [whatsapp_watcher] ERROR: Error scanning unread chats
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 163, in _extract_unread_chats
+    unread_spans = self._page.query_selector_all(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 8146, in query_selector_all
+    self._sync(self._impl_obj.query_selector_all(selector=selector))
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 410, in query_selector_all
+    return await self._main_frame.query_selector_all(selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 355, in query_selector_all
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-26 21:13:29,825 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:13:59,826 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:13:59,868 [whatsapp_watcher] ERROR: Error scanning unread chats
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 163, in _extract_unread_chats
+    unread_spans = self._page.query_selector_all(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 8146, in query_selector_all
+    self._sync(self._impl_obj.query_selector_all(selector=selector))
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 410, in query_selector_all
+    return await self._main_frame.query_selector_all(selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 355, in query_selector_all
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-26 21:13:59,871 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:14:29,881 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:14:29,895 [whatsapp_watcher] ERROR: Error scanning unread chats
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 163, in _extract_unread_chats
+    unread_spans = self._page.query_selector_all(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 8146, in query_selector_all
+    self._sync(self._impl_obj.query_selector_all(selector=selector))
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 410, in query_selector_all
+    return await self._main_frame.query_selector_all(selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 355, in query_selector_all
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-26 21:14:29,923 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:14:59,924 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:15:00,093 [whatsapp_watcher] ERROR: Error scanning unread chats
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 163, in _extract_unread_chats
+    unread_spans = self._page.query_selector_all(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 8146, in query_selector_all
+    self._sync(self._impl_obj.query_selector_all(selector=selector))
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 410, in query_selector_all
+    return await self._main_frame.query_selector_all(selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 355, in query_selector_all
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-26 21:15:00,093 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:15:30,107 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:15:30,151 [whatsapp_watcher] ERROR: Error scanning unread chats
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 163, in _extract_unread_chats
+    unread_spans = self._page.query_selector_all(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 8146, in query_selector_all
+    self._sync(self._impl_obj.query_selector_all(selector=selector))
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 410, in query_selector_all
+    return await self._main_frame.query_selector_all(selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 355, in query_selector_all
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-26 21:15:30,168 [whatsapp_watcher] INFO: No unread chats found.
+2026-02-26 21:16:00,305 [whatsapp_watcher] INFO: Scanning WhatsApp Web for unread chats ...
+2026-02-26 21:16:00,490 [whatsapp_watcher] ERROR: Error scanning unread chats
+Traceback (most recent call last):
+  File "D:\Hackathon-0\watchers\whatsapp_watcher.py", line 163, in _extract_unread_chats
+    unread_spans = self._page.query_selector_all(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\sync_api\_generated.py", line 8146, in query_selector_all
+    self._sync(self._impl_obj.query_selector_all(selector=selector))
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_page.py", line 410, in query_selector_all
+    return await self._main_frame.query_selector_all(selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_frame.py", line 355, in query_selector_all
+    await self._channel.send(
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boss\AppData\Roaming\Python\Python312\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-26 21:16:00,504 [whatsapp_watcher] INFO: No unread chats found.
